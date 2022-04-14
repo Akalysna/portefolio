@@ -1,3 +1,7 @@
+*{
+    text-decoration: none;
+}
+
 body {
     margin: 0;
     background: url(../assets/fond_home.png);
@@ -7,43 +11,39 @@ body {
     height: 100vh;
 }
 
-@font-face {
-    font-family: "Thabit";
-    src: url('../assets/font/Thabit.ttf');
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-
-    background-color: rgba(27, 27, 27, 0.5);
-}
-
-ul {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-
-    list-style: none;
-}
-
-li,p{
-padding: 0.2em 1em;
-}
-
-a{
+a, p, h2, #show {
     text-decoration:  none;
-    color: white;
-
-    font-family: "Thabit";
-}
-
-h1 {
     font-family: "Thabit";
     color: white;
     font-weight: lighter;
-    
 }
 
+#info {
+    margin-top: 3em;
+    margin-left: 4em;
+    padding: 1em;
+}
 
+#info h2 {
+    font-size: 4em;
+    margin: 0;
+}
+
+#info p { 
+    font-size: 1.2em;
+    width: 35%;
+    margin-bottom: 3em;
+}
+
+#show {
+    padding: 0.5em 2em;
+    border: 2px solid #FFFFFF;
+    /* margin-left: 4em; */
+    transition: 0.2s ease-in;
+}
+
+#show:hover {
+    background-color: #FFFFFF;
+    color: #0b0b0b;
+    font-weight: bold;
+}

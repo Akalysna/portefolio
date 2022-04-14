@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Thabit";
+    src: url('../assets/font/Thabit.ttf');
+}
+
+a,p {
+    text-decoration:  none;
+    font-family: "Thabit";
+    color: white;
+    font-weight: lighter;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+
+    background-color: rgba(27, 27, 27, 0.5);
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+    list-style: none;
+}
+
+nav :only-child {
+    padding: 0.2em 1em;
+}
